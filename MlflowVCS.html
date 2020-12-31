@@ -74,6 +74,16 @@ Returns:<br>
 Returns:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;path&nbsp;to&nbsp;the&nbsp;pipeline</tt></dd></dl>
 
+<dl><dt><a name="MlflowVCS-get_run_list"><strong>get_run_list</strong></a>(self, **kwargs) -&gt; list</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;runs&nbsp;in&nbsp;an&nbsp;active&nbsp;experiment.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;run_view_type&nbsp;(type,&nbsp;optional):&nbsp;ACTIVE_ONLY,&nbsp;DELETED_ONLY,&nbsp;or&nbsp;ALL&nbsp;runs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_results&nbsp;(int,&nbsp;optional):&nbsp;Maximum&nbsp;number&nbsp;of&nbsp;results&nbsp;desired.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order_by&nbsp;(list,&nbsp;optional):&nbsp;List&nbsp;of&nbsp;order_by&nbsp;clauses.&nbsp;Currently&nbsp;supported&nbsp;values&nbsp;are&nbsp;are&nbsp;metric.key,&nbsp;parameter.key,&nbsp;tag.key,&nbsp;attribute.key.&nbsp;For&nbsp;example,&nbsp;order_by=["tag.release&nbsp;ASC",&nbsp;"metric.click_rate&nbsp;DESC"].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;list&nbsp;of&nbsp;run&nbsp;details</tt></dd></dl>
+
 <dl><dt><a name="MlflowVCS-load_raw_file_paths"><strong>load_raw_file_paths</strong></a>(self) -&gt; list</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;complete&nbsp;path&nbsp;to&nbsp;raw&nbsp;files&nbsp;on&nbsp;the&nbsp;original&nbsp;storage<br>
 &nbsp;<br>
 Returns:<br>
