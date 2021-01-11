@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module FeatureTargetSplit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>FeatureTargetSplit</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/filip_kaiser/vcs-test-project/NeotericTransformers/FeatureTargetSplit.py">/home/filip_kaiser/vcs-test-project/NeotericTransformers/FeatureTargetSplit.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="NeotericTransformers.ICustomTransformable.html#ICustomTransformable">NeotericTransformers.ICustomTransformable.ICustomTransformable</a>(<a href="sklearn.base.html#TransformerMixin">sklearn.base.TransformerMixin</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="FeatureTargetSplit.html#FeatureTargetSplit">FeatureTargetSplit</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FeatureTargetSplit">class <strong>FeatureTargetSplit</strong></a>(<a href="NeotericTransformers.ICustomTransformable.html#ICustomTransformable">NeotericTransformers.ICustomTransformable.ICustomTransformable</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FeatureTargetSplit">FeatureTargetSplit</a>(target_columns:&nbsp;list)<br>
+&nbsp;<br>
+This&nbsp;Transformer&nbsp;should&nbsp;be&nbsp;used&nbsp;as&nbsp;the&nbsp;last&nbsp;step&nbsp;in&nbsp;preprocessing&nbsp;pipeline.<br>
+&nbsp;<br>
+It&nbsp;takes&nbsp;the&nbsp;names&nbsp;of&nbsp;feature&nbsp;of&nbsp;feature&nbsp;columns&nbsp;and&nbsp;target&nbsp;column(s)&nbsp;and&nbsp;outpust&nbsp;two&nbsp;datasets:<br>
+-&nbsp;one&nbsp;with&nbsp;features<br>
+-&nbsp;one&nbsp;with&nbsp;targets.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="FeatureTargetSplit.html#FeatureTargetSplit">FeatureTargetSplit</a></dd>
+<dd><a href="NeotericTransformers.ICustomTransformable.html#ICustomTransformable">NeotericTransformers.ICustomTransformable.ICustomTransformable</a></dd>
+<dd><a href="sklearn.base.html#TransformerMixin">sklearn.base.TransformerMixin</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FeatureTargetSplit-__init__"><strong>__init__</strong></a>(self, target_columns: list)</dt><dd><tt>Class&nbsp;constructor<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;target_columns&nbsp;(list):&nbsp;column(s)&nbsp;that&nbsp;contain(s)&nbsp;target&nbsp;variable(s)</tt></dd></dl>
+
+<dl><dt><a name="FeatureTargetSplit-fit"><strong>fit</strong></a>(self, X: pandas.core.frame.DataFrame, y=None, **fit_params)</dt></dl>
+
+<dl><dt><a name="FeatureTargetSplit-transform"><strong>transform</strong></a>(self, X: pandas.core.frame.DataFrame, y=None) -&gt; pandas.core.frame.DataFrame</dt></dl>
+
+<hr>
+Methods inherited from <a href="NeotericTransformers.ICustomTransformable.html#ICustomTransformable">NeotericTransformers.ICustomTransformable.ICustomTransformable</a>:<br>
+<dl><dt><a name="FeatureTargetSplit-fit_transform"><strong>fit_transform</strong></a>(self, X: Union[pandas.core.series.Series, pandas.core.frame.DataFrame], y: pandas.core.series.Series = None, **fit_params)</dt><dd><tt>Fit&nbsp;to&nbsp;data,&nbsp;then&nbsp;transform&nbsp;it.<br>
+&nbsp;<br>
+Fits&nbsp;transformer&nbsp;to&nbsp;X&nbsp;and&nbsp;y&nbsp;with&nbsp;optional&nbsp;parameters&nbsp;fit_params<br>
+and&nbsp;returns&nbsp;a&nbsp;transformed&nbsp;version&nbsp;of&nbsp;X.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+X&nbsp;:&nbsp;numpy&nbsp;array&nbsp;of&nbsp;shape&nbsp;[n_samples,&nbsp;n_features]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Training&nbsp;set.<br>
+&nbsp;<br>
+y&nbsp;:&nbsp;numpy&nbsp;array&nbsp;of&nbsp;shape&nbsp;[n_samples]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Target&nbsp;values.<br>
+&nbsp;<br>
+**fit_params&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Additional&nbsp;fit&nbsp;parameters.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+X_new&nbsp;:&nbsp;numpy&nbsp;array&nbsp;of&nbsp;shape&nbsp;[n_samples,&nbsp;n_features_new]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Transformed&nbsp;array.</tt></dd></dl>
+
+<dl><dt><a name="FeatureTargetSplit-inverse_transform"><strong>inverse_transform</strong></a>(self, X: Union[pandas.core.series.Series, pandas.core.frame.DataFrame], y: pandas.core.series.Series = None) -&gt; pandas.core.frame.DataFrame</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="sklearn.base.html#TransformerMixin">sklearn.base.TransformerMixin</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Union</strong> = typing.Union</td></tr></table>
+</body></html>
